@@ -34,3 +34,7 @@
 - Upload a file to a form (the example below assumes that the form field is `<input type="file" name="cv" />`):
 
 `http {{[-f|--form]}} {{POST}} {{https://example.com/upload}} {{cv@path/to/file}}`
+
+- Send raw JSON to an API endpoint:
+
+`echo '{"key": "value"}' | http POST https://example.com/api/v1/endpoint`
